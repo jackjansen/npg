@@ -1,0 +1,7 @@
+Aan de huidige versie van NPG mankeren nog een aantal kleine dingen:
+1)	M.b.v. '-' kun je terug in de tekst. Na een aantal keren krijg
+	je het begin van de tekst, ondanks dat er nog een groot stuk tekst
+	tussen zit.
+2)	De shell, opgestart vanuit NPG, is niet met DEL af te breken.
+	(opgelost)
+3)	Backspaces worden niet geteld mbt de regellengte. (zie w optie)

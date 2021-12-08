@@ -1,0 +1,18 @@
+
+		NPG HELP 0
+
+Tijp voor meer informatie 'h?', waarbij vraagteken het nummer
+is van het onderwerp.
+
+1.  Commando's om regels te laten zien.
+2.  Commando's om opties te zetten.
+3.  Algemene commando's.
+4.  Zoek commando's.
+
+Het formaat van de npg aanroep is : 
+
+npg [file] ...
+
+Indien geen file wordt opgegeven ( of indien er een '-' ipv de
+filenaam staat) wordt standard input gepaged.
+Zie het 'n' commando (in h3 ) voor gebruik van meerdere files.

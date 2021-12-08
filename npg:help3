@@ -1,0 +1,18 @@
+
+		NPG HELP 3
+
+Algemene commando's.
+
+q	Npg stopt ermee. Als u nog files heeft wordt er gewaarschuwd.
+n	Begin met het pagen van de volgende file in de aanroep.
+n <fn> of n<fn> of n=<fn>
+	Begin met het pagen van de file <fn>.
+nr	Rewind de lijst met files in de aanroep.
+n?	Druk lijst van files in aanroep af. De huidige file staat
+	tussen [ en ].
+b nn	Skip de eerste nn bytes van de invoer.
+b nnb	Skip de eerste nn blokken, waarbij de blok grootte 512 is.
+!<cmd>	Executeer het shell commando <cmd>.
+!!	Executeer het laatst gegeven shell commmando nog eens.
+!	Executeer een interactieve shell.
+

@@ -1,0 +1,19 @@
+
+		NPG HELP 2
+
+Commando's om opties te zetten. De aanduiding +/- betekent dat u
+met de + de optie aanzet, en met de - af.
+
+a+/-	Zet de AUX poort op de terminal aan als er text geprint wordt.
+r+/-	Druk voor iedere regel het regelnummer af.
+#+/-	Zelfde als r+/-.
+f+/-	Geef behalve de prompt ook file naam en positie in de file.
+u+/-	Geef de kop en de prompt onderaan het scherm.
+snn	Geeft nn regels op het beeldscherm.
+wnn	Geeft nn karakters op een regel.
+t term	Geef aan dat U achter een terminal van tipe 'term' zit.
+	'term' bijvoorbeeld b100,minibee,decwriter, etc.
+l+/-	Zorgt dat de regels afgedrukt worden zoals het ex 'l' commando.
+
+Als U geen opties veranderd is de situatie :
+a-,r+,s23,w80,l-,f+,u-

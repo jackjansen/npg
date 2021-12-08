@@ -1,0 +1,19 @@
+
+		NPG HELP 4
+
+De zoekcommando's dienen om een string te zoeken in de file,
+en de eerstvolgende regel waar de string in voorkomt af te
+drukken.
+er wordt gezocht vanaf de huidige regel + 1 tot het einde
+van de file, en dan vanaf het begin tot de huidige regel -1.
+dat betekend dat een string op de huidige regel niet gevonden wordt.
+een zoek-commando heeft de volgende vorm :
+/<text>/	zoek naar <text>.
+//		zoek naar de laatst gegeven <text>
+Er zijn 2 karakters speciaal :
+^ aan het begin van de string : zoek alleen naar <text> in het
+  begin van de regel.
+$ aan het einde van de string : zoek alleen naar <text> aan het einde
+  van de regel.
+Als je een van deze karakters wilt gebruiken ( of een '/') moet je
+deze vooraf laten gaan door een '\'.

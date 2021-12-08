@@ -1,0 +1,15 @@
+
+		NPG HELP 1
+Commando's om bepaalde regels te laten zien :
+
++       Druk de volgende bladzijde af.
+-       Druk de vorige bladzijde af.
++nn     Druk de bladzijde af die nn regels verder begint dan de
+	  huidige bladzijde.
+-nn	Druk de bladzijde af die nn regels eerder begint dan de
+	  huidige bladzijde.
+nn	Druk de bladzijde af die met regel nn begint.
+$	Druk de laatste bladzijde van de file af.
+<lf>	<return> of <line feed> is hetzelfde als +.
+.	Druk de bladzijde af, die met de huidige regel begint.
+p	Hetzelfde als '.'.

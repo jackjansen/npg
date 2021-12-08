@@ -1,0 +1,133 @@
+.TH NPG 1
+.SH NAME
+npg \- new page program
+.SH SYNOPSIS
+.B npg [ files ]
+.SH DESCRIPTION
+.I npg
+allows you to page through the given files
+or through standard input.
+The following commands are npg commands, which can be entered after the
+prompt ('>').
+Typing a '?' or a 'h' will print the first help_file.
+The help files provide a Dutch equivalent of this Unix manual.
+.PP
+Commands to show some part of the paged file:
+.TP
+.B +
+Print the next page.
+Typing a return or linefeed will do the same.
+.TP
+.B \-
+Print the previous page.
+.TP
+.B +nn
+Start nn lines after the current page.
+.TP
+.B \-nn
+Start nn lines before the current page.
+.TP
+.B nn
+Print the page starting with linenumber nn.
+.TP
+.B $
+Print the last page of the file.
+.TP
+.B .
+Reprint the current page.
+'p' will do the same.
+.PP
+Commands to set options.
+'+' means set option on; '-' set option off,
+e.g. 'a-' switches the 'a' option off.
+.TP
+.B a+
+Switch the AUX port on for printing text on an auxilary device.
+.TP
+.B r+
+Print a linenumber in front of every line.
+\'#+' will do the same.
+.TP
+.B f+
+Print full headers.
+.TP
+.B u+
+Print the header and the prompt at the bottom of the page.
+.TP
+.B snn
+Set screen size to nn lines/screen
+.TP
+.B wnn
+Set line width to nn characters.
+.TP
+.B t<type>
+Rename the type of your terminal to <type>.
+.TP
+.B l+
+Use a special format for printing non-printable characters,
+similar to the format printed by the 'ex' editor.
+.PP
+The default options are a-,r+,s23,w80,l-,f+,u-.
+You can enter several options in one line, separated by a comma, e.g.
+\'r-,.' will reprint the current page without linenumbers.
+A npg command string assigned to the exported shellvariable 'NPG_STUP' will
+be executed every time you're calling npg.
+So by setting this shellvariable to a proper value provide your own default
+values for npg options.
+.PP
+General commands:
+.TP
+.B q
+quit if there are no more files to page.
+.TP
+.B qq
+quit even if there are files left to page.
+.TP
+.B n
+Start paging of the next file in the program call.
+.TP
+.B n <fn>
+Page the file <fn>. 'n<fn>' and 'n=<fn>' will do the same.
+.TP
+.B nr
+Rewind the list of files in the program call.
+.TP
+.B n?
+Print list of files in the call. The file currently being paged
+is printed between brackets.
+.TP
+.B b <bn>
+The b option makes
+.I npg
+skip the first <bn> bytes or the first
+<bn>b blocks of the file.
+The block size is 512 bytes.
+.TP
+.B !<cmd>
+Pass <cmd> to a shell.
+.TP
+.B !!
+Rerun the last shell command.
+.TP
+.B !
+Run an interactive shell.
+.PP
+Search commands.
+.I npg
+starts searching from one line after the current line until the
+end of the file and then from the top of the file until one line
+before the current line.
+.TP
+.B /<text>/
+The last '/' may be omitted, if this command is the last one in the line.
+a line containing <text>.
+.TP
+.B //
+Search for the latest <text>.
+Like in the previous command the second '/' may be omitted.
+.PP
+Like the search patterns in the UNIX texteditor 'ed', the special
+characters '^' and '$' are known. '^' matches the beginning of a line, '$' the end.
+These two characters can be escaped by a '\\'. Type '\\\\' for a single '\\'.
+.SH AUTHOR
+Jack Jansen, Informatica V.U., Amsterdam.
